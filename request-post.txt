@@ -1,0 +1,16 @@
+curl -X POST -H "Content-Type: application/json" -d "{\"id\":\"001\",\"name\":\"A\",\"age\":\"10\",\"address\":\"Tokyo\",\"tel\":\"090-1111-1111\"}" https://ドメイン名/users-stage/users
+curl -X POST -H "Content-Type: application/json" -d "{\"id\":\"002\",\"name\":\"B\",\"age\":\"20\",\"address\":\"Osaka\",\"tel\":\"090-2222-2222\"}" https://ドメイン名/users-stage/users
+curl -X POST -H "Content-Type: application/json" -d "{\"id\":\"003\",\"name\":\"C\",\"age\":\"30\",\"address\":\"Nagoya\",\"tel\":\"090-3333-3333\"}" https://ドメイン名/users-stage/users
+
+
+
+curl -X POST -H "Content-Type: application/json" -d "{\"skj\":\"11\",\"jkj\":\"AA\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
+curl -X POST -H "Content-Type: application/json" -d "{\"skj\":\"22\",\"jkj\":\"BB\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
+curl -X POST -H "Content-Type: application/json" -d "{\"skj\":\"33\",\"jkj\":\"CC\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
+curl -X POST -H "Content-Type: application/json" -d "{\"skj\":\"44\",\"jkj\":\"DD\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
+curl -X POST -H "Content-Type: application/json" -d "{\"skj\":\"55\",\"jkj\":\"EE\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
+curl -X POST -H "Content-Type: application/json" -d "{\"skj\":\"66\",\"jkj\":\"FF\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
+curl -X POST -H "Content-Type: application/json" -d "{\"skj\":\"77\",\"jkj\":\"GG\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
+curl -X POST -H "Content-Type: application/json" -d "{\"skj\":\"88\",\"jkj\":\"HH\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
+curl -X POST -H "Content-Type: application/json" -d "{\"skj\":\"99\",\"jkj\":\"II\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
+curl -X POST -H "Content-Type: application/json" -d "{\"skj\":\"00\",\"jkj\":\"JJ\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt

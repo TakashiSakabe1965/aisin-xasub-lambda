@@ -1,0 +1,5 @@
+curl -X PUT -H "Content-Type: application/json" -d "{\"id\":\"001\",\"name\":\"Z\",\"age\":\"99\",\"address\":\"Okinawa\",\"tel\":\"090-9999-9999\"}" https://ドメイン名/users-stage/users
+
+curl -X PUT -H "Content-Type: application/json" -d "{"skj" : "88","jkj" : "WW"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
+
+curl -X PUT -H "Content-Type: application/json" -d "{\"skj\" : \"88\",\"jkj\" : \"WW\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt

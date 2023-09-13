@@ -1,0 +1,13 @@
+{
+    'TableName' : 'kjtxt-translate-tb',
+    'KeySchema' : [
+        {'AttributeName': 'skj','KeyType' : 'HASH'},
+    ],
+    'AttributeDefinitions': [
+        {'AttributeName': 'skj','AttributeType': 'S'}
+    ],
+    'ProvisionedThroughput': {
+        'ReadCapacityUnits': 5,
+        'WriteCapacityUnits': 5 
+    }
+}

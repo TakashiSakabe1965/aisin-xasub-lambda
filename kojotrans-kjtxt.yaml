@@ -1,0 +1,132 @@
+#
+# AWS SAM CLI API-GateWay Lambda DynamaDB Creation auther Takashi Sakabe 2023.8.28 
+#
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: KOJO code translate Restfull API KJTXT
+Resources:
+#
+# KJTXT 工場コード取得API
+#
+  KjtxtGetFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: Kjtxt-Get-Function
+      CodeUri: /home/ec2-user/environment/kojotrans/kjtxt/kjtxt-get-func.py
+      Handler: kjtxt-get-func.lambda_handler
+      Runtime: python3.9
+      Timeout: 5
+      MemorySize: 256
+      Policies:
+        - TranslateFullAccess
+        - AmazonDynamoDBFullAccess
+      Events:
+        GetApi:
+          Type: Api
+          Properties:
+            Path: /kjtxt
+            Method: get
+            RestApiId: !Ref KjtxtAPI
+  KjtxtAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: kjtxt-api
+      StageName: prod
+      EndpointConfiguration: REGIONAL
+#
+# KJTXT 工場コード追加API
+#
+  KjtxtPostFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: Kjtxt-Post-Function
+      CodeUri: /home/ec2-user/environment/kojotrans/kjtxt/kjtxt-post-func.py
+      Handler: kjtxt-post-func.lambda_handler
+      Runtime: python3.9
+      Timeout: 5
+      MemorySize: 256
+      Policies:
+        - TranslateFullAccess
+        - AmazonDynamoDBFullAccess
+      Events:
+        GetApi:
+          Type: Api
+          Properties:
+            Path: /kjtxt
+            Method: post
+            RestApiId: !Ref KjtxtAPI
+  KjtxtAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: kjtxt-api
+      StageName: prod
+      EndpointConfiguration: REGIONAL
+#
+# KJTXT 工場コード更新API
+#
+  KjtxtPutFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: Kjtxt-Put-Function
+      CodeUri: /home/ec2-user/environment/kojotrans/kjtxt/kjtxt-put-func.py
+      Handler: kjtxt-put-func.lambda_handler
+      Runtime: python3.9
+      Timeout: 5
+      MemorySize: 256
+      Policies:
+        - TranslateFullAccess
+        - AmazonDynamoDBFullAccess
+      Events:
+        GetApi:
+          Type: Api
+          Properties:
+            Path: /kjtxt
+            Method: put
+            RestApiId: !Ref KjtxtAPI
+  KjtxtAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: kjtxt-api
+      StageName: prod
+      EndpointConfiguration: REGIONAL
+#
+# KJTXT 工場コード削除API
+#
+  KjtxtDeleteFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: Kjtxt-Delete-Function
+      CodeUri: /home/ec2-user/environment/kojotrans/kjtxt/kjtxt-delete-func.py
+      Handler: kjtxt-delete-func.lambda_handler
+      Runtime: python3.9
+      Timeout: 5
+      MemorySize: 256
+      Policies:
+        - TranslateFullAccess
+        - AmazonDynamoDBFullAccess
+      Events:
+        GetApi:
+          Type: Api
+          Properties:
+            Path: /kjtxt
+            Method: delete
+            RestApiId: !Ref KjtxtAPI
+  KjtxtAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: kjtxt-api
+      StageName: prod
+      EndpointConfiguration: REGIONAL
+# 
+# DynamoDB 工場コード変換テーブルの作成
+#
+  KjtxtTbl:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      TableName: kjtxt-translate-tb
+      PrimaryKey:
+        Name: skj
+        Type: String
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
