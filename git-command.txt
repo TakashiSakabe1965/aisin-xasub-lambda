@@ -1,0 +1,45 @@
+ローカルリポジトリの作成
+cd dir-name
+git init
+
+リモートリポジトリの登録
+git remote add origin https://github.com/TakashiSakabe1965/aisin-xasub-lambda.git
+
+ステージング領域へ追加
+git add file-name
+
+ファイル、ディレクトリの削除
+git rm file-name
+git rm -r dir-name
+git rm --cached
+
+元の状態に戻す
+git reset HEAD file-name
+git checkout file- name
+
+ローカルリポジトリへ追加
+git commit -v
+
+リモートリポジトリへ追加
+git push -u origin master
+
+gitの状態を表示
+git status
+
+変更履歴の表示
+git log　　　　　　　　j下に移動 　　k上に移動　　 q終了
+git log --oneline　　（1行で表示） 
+git log -p file-name　（ファイルの変更内容の表示）
+git log -n no　　　　　(最新のcommitを必要数分表示)
+
+変更差分の表示
+git diff       ステージング領域との差分
+git diff HEAD　ステージン領域とＣＯＭＭＩＴの差分
+
+gitの管理から外す
+.gitignoreを作成
+ファイル名
+ディレクトリ名　dir\
+
+
+Attlassian社のGitチュートリアル
