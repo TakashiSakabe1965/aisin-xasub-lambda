@@ -56,7 +56,7 @@ def delete_kjtxt(Hheaders,skj):
             'isBase64Encoded': False,
             'statusCode': 200,
             'headers': Hheaders,
-            'body': json.dumps("")
+            'body': json.dumps("Delete successful")
         }
     else:
         return {

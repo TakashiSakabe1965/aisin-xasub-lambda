@@ -40,7 +40,7 @@ def get_kjtxt(Hheaders,skj):
 
 def get_kjtxts(Hheaders):
 
-1# dynamodb 全テーブル読み込み
+#  dynamodb 全テーブル読み込み
 
     dynamoDBResponse = table.scan()
     if not dynamoDBResponse['Items']:
