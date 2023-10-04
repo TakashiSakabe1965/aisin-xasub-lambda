@@ -1,0 +1,27 @@
+[33mcommit c34bb6d60b1c7e44f6b86ff35fea899ea9785ca8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: TakashiSakabe1965 <sakabe@isd.aisin.co.jp>
+Date:   Wed Sep 13 13:53:28 2023 +0900
+
+    aisin xasub kjtxtシリーズ修正
+    
+    kjtxt-delete-func,kjtxt-get-func 修正
+
+[33mcommit 701f25033d3359a5782c2e22fdcef0b54adb58c7[m
+Author: TakashiSakabe1965 <sakabe@isd.aisin.co.jp>
+Date:   Wed Sep 13 13:38:14 2023 +0900
+
+    curl テストコマンドの変更
+
+[33mcommit 12349b9e32e1c3a0e713810a85d6ef738b65affe[m
+Author: TakashiSakabe1965 <sakabe@isd.aisin.co.jp>
+Date:   Wed Sep 13 11:32:38 2023 +0900
+
+    git commandの説明
+
+[33mcommit 3b50ed57c8cb2dd9ec4d140512a2366aabce8be3[m
+Author: TakashiSakabe1965 <sakabe@isd.aisin.co.jp>
+Date:   Wed Sep 13 10:05:48 2023 +0900
+
+    aisin xasub kjtxtシリーズを作成
+    
+    初期バージョンが完成
