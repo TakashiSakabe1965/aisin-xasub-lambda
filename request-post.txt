@@ -14,3 +14,4 @@ curl -v -X POST -H "Content-Type: application/json" -d "{\"skj\":\"77\",\"jkj\":
 curl -v -X POST -H "Content-Type: application/json" -d "{\"skj\":\"88\",\"jkj\":\"HH\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
 curl -v -X POST -H "Content-Type: application/json" -d "{\"skj\":\"99\",\"jkj\":\"II\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
 curl -v -X POST -H "Content-Type: application/json" -d "{\"skj\":\"00\",\"jkj\":\"JJ\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
+curl -v -X POST -H "Content-Type: application/json" -d "{\"skj\":\"AA\",\"jkj\":\"ZZ\"}" https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
