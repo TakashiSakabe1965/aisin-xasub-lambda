@@ -1,2 +1,2 @@
-curl -v -X DELETE https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt?skj=88
+curl -v -X DELETE https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt?skj=88  
 curl -v -X DELETE https://votrcyjeei.execute-api.ap-northeast-1.amazonaws.com/prod/kjtxt
