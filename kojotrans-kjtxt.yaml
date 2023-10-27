@@ -1,5 +1,5 @@
 #
-# AWS SAM CLI API-GateWay Lambda DynamaDB Creation auther Takashi Sakabe 2023.8.28 
+# AWS SAM CLI API-GateWay Lambda DynamaDB Creation auther Takashi Sakabe 2023.8.28   
 #
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
