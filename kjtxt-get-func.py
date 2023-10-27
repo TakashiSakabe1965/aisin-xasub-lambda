@@ -1,7 +1,7 @@
 #
 #       title  kjtxt 工場変換サブルーチン kjtxt-get-func
 #       create 2023/9/12
-#       author Takashi Sakabe
+#       author Takashi Sakabe   
 #   
 import boto3
 import json
