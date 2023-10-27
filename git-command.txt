@@ -4,7 +4,7 @@ git init
 
 リモートリポジトリの登録
 git remote add origin https://github.com/TakashiSakabe1965/aisin-xasub-lambda.git
-
+git remote add リポジトリ名　ＵＲＬ
 ステージング領域へ追加
 git add file-name
 
@@ -13,15 +13,56 @@ git rm file-name
 git rm -r dir-name
 git rm --cached
 
-元の状態に戻す
-git reset HEAD file-name
-git checkout file- name
+ファイルの変更の取り消し
+git checkout -- file-name dir-name
+
+ステージした変更を取り消し
+git reset HEAD file-name　dir-name
+
+直前のコミットをやり直す
+git commit --amend
 
 ローカルリポジトリへ追加
 git commit -v
 
 リモートリポジトリへ追加
 git push -u origin master
+
+リモートリポジトリの表示
+git remote
+git remote -v  詳細表示　fetch push
+git remote show リポジトリ名
+
+リモートから情報を取得する
+git fetch origin（リポジトリ名）
+
+リモート名の変更
+git remote rename 旧リモート名　新リモート名
+
+リモートの削除
+git remote rm リモート名
+
+リモートリポジトリのコピー
+git clone リモートリポジトリＵＲＬ
+
+ブランチの表示
+git branch -a
+
+ワークツリーへ反映
+git merge origin/master
+
+ワークツリーの切り替え（ブランチの切り替え）
+git checkout remotes/origin/master
+
+リモートから情報を取得してマージする
+git pull origin master
+
+ブランチの作成
+git branch ブランチ名
+
+ブランチの切り替え
+git checkout 既存ブランチ名
+git checkout -b 新ブランチ名
 
 gitの状態を表示
 git status
